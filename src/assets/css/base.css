@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'SourceSansRegular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/SourceSansPro-Regular.otf') format("opentype");
+  
+}
+
+body {
+  font-family: "SourceSansRegular"
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "SourceSansRegular";
+  line-height: 48px;
+  color: #000;
+}
