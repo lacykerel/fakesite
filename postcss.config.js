@@ -9,6 +9,8 @@ module.exports = {
     'postcss-utilities': {},
     'lost': {},
     'precss': {},
-    'cssnano': {}
+    'cssnano': {
+      autoprefixer: false
+    }
   }
 }
