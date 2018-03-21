@@ -2,12 +2,11 @@
   font-family: 'SourceSansRegular';
   font-weight: normal;
   font-style: normal;
-  src: url('/SourceSansPro-Regular.otf') format("opentype");
-  
+  src: url('./sourcesanspro.otf') format("opentype");
 }
 
 body {
-  font-family: "SourceSansRegular"
+  font-family: "SourceSansRegular";
 }
 
 h1 {

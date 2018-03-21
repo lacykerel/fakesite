@@ -1,26 +1,29 @@
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
     entry: [
         'react-hot-loader/patch',
         './src/index.js'
     ],
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
+        filename: 'bundle.js'
+    },
     module: {
         rules: [
             {test: /\.(js|jsx)/,exclude: /node_modules/,use: ['babel-loader'] },
             {test: /\.css$/, use: ['style-loader', 'postcss-loader'] },
-            {test: /\.(png|jpg|gif|otf)$/, use: ['url-loader'] },
+            {test: /\.(png|jpg|gif)$/, use: ['url-loader'] },
+            {test: /\.(woff|woff2|eot|ttf|otf)$/, use: ['file-loader'] }
             
         ]
     },
     resolve: {
         extensions: ['*', '.js', '.jsx']
     },
-    output: {
-        path: __dirname + '/dist',
-        publicPath: '/',
-        filename: 'bundle.js'
-    },
+    
     plugins: [
         new webpack.HotModuleReplacementPlugin()
     ],
