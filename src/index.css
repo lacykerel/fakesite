@@ -42,24 +42,19 @@ table {
 	border-spacing: 0;
 }
 
-@font-face {
-  font-family: 'SourceSans';
-  font-weight: 600;
-  font-style: normal;
-  src: url('./fonts/sourcesanspro.otf') format("opentype");
-}
-
 body {
   font-family: "SourceSans";
   font-size: 16px;
   margin: 0;
 }
 
-:root {
-  --redish: #ee2d1c;
-  --blackish: #4c4c51;
-  --blueish: #88939E;
+@font-face {
+  font-family: 'SourceSans';
+  font-weight: 600;
+	font-style: normal;
+	src: url('./fonts/sourcesanspro.otf') format("opentype");
 }
+
 
 
 .center {

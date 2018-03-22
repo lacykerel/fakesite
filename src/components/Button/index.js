@@ -1,9 +1,9 @@
 import React from 'react';
-import ButtonStyles from './button.css';
+import styles from './button.css.json';
 
 
 const Button = (props) => (
-  <a className="btn" href="/">{props.text}</a>
+  <a className={styles.btn} href="/">{props.text}</a>
 )
 
 export default Button;

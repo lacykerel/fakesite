@@ -14,10 +14,22 @@ module.exports = {
     module: {
         rules: [
             {test: /\.(js|jsx)/,exclude: /node_modules/, use: ['babel-loader'] },
-            {test: /\.css$/, use: ['style-loader', 'postcss-loader'] },
+            {test: /\.css$/, 
+                use: [
+                    'style-loader',
+                    'postcss-loader'
+
+                ] 
+            },
             {test: /\.(png|jpg|gif)$/, use: ['url-loader'] },
-            {test: /\.[ot]tf$/, loader: 'url?limit=65000&mimetype=application/octet-stream&name=./[name].[ext]'}
-            
+            { test: /\.otf$/, 
+                loader: 'file-loader', 
+                options: {
+                    name: 'fonts/[name].[ext]',
+                    limit: 50
+                }
+            },
+
         ]
     },
     resolve: {

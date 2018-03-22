@@ -7,6 +7,8 @@ module.exports = {
     'postcss-css-reset': {},
     'postcss-flexbox': {},
     'postcss-utilities': {},
+    'postcss-custom-media': {},
+    'postcss-modules': {},
     'lost': {},
     'precss': {},
     'cssnano': {
