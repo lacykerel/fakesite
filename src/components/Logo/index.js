@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import LogoImg from './logo.png';
-import LogoStyle from './style.css';
+import styles from './logo.css';
 
 const Logo = () => (
-  <div className="logo"><img src={LogoImg} /></div>
-  
+  <div className={styles.logo}><img src={LogoImg} /></div> 
 )
 
 export default Logo;

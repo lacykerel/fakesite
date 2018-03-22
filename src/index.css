@@ -48,16 +48,31 @@ body {
   margin: 0;
 }
 
-@font-face {
-  font-family: 'SourceSans';
-  font-weight: 600;
-	font-style: normal;
-	src: url('./fonts/sourcesanspro.otf') format("opentype");
+h1,p,a {
+	margin-bottom: 22px;
 }
 
+p {
+	color: #88939E;
+	font-size: 22px;
+	line-height: 28px;
+}
 
+section {
+	margin-bottom: 40px;
+  padding: 0 20px;
+}
 
-.center {
-  /* lost-align: center;
-  height: auto; */
+@font-face {
+  font-family: 'SourceSans';
+  font-weight: normal;
+	font-style: normal;
+	src: url('/fonts/sourcesanspro.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'SourceSansBold';
+  font-weight: bold;
+	font-style: normal;
+	src: url('/fonts/sourcesansprobold.otf') format("opentype");
 }

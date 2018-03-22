@@ -1,0 +1,11 @@
+footer {
+  lost-center: 1200px;
+  lost-utility: clearfix;
+}
+
+.footer-link-title {
+  color: #f04333;
+  font-family: 'SourceSansBold';
+  font-size: 22px;
+  font-weight: bold;
+}

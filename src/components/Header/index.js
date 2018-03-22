@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Logo from '../Logo';
 import Button from '../Button';
-import Background from './hero-image.png';
 import styles from './header.css';
 import { slide as Menu } from 'react-burger-menu';
 
@@ -24,21 +23,20 @@ class Header extends Component {
 
   toggleMenu() {
     this.setState({menuOpen: !this.state.menuOpen})
-    console.log(this.state.menuOpen, 'menu')
   }
 
   render() {
     return (
-      <header style={{backgroundImage: "url(" + Background + ")"}}>
+      <header>
       <nav>
         <Logo />
-          <a onClick={() => this.toggleMenu()} id="header-menu-trigger">
+          <a onClick={() => this.toggleMenu()} className={styles['header-menu-trigger']}>
             <span className={styles['header-menu-icon']}></span>
           </a>
-          <div id="slide">
-          <Menu width={ 240 } noOverlay isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} right className="menu-nav-wrap">
-            <a href="#" onClick={() => this.closeMenu()} className="close-button" title="close"><span>Close</span></a>
-              <ul className="nav-list">
+          <div className={styles.slide}>
+          <Menu width={ 280 } noOverlay isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} right className={styles['menu-nav-wrap']}>
+            <a href="#" onClick={() => this.closeMenu()} className={styles['close-button']} title="close"><span>Close</span></a>
+              <ul className={styles['nav-list']}>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Account</a></li>
@@ -48,7 +46,7 @@ class Header extends Component {
           </div>
       </nav>
       
-      <div className="">
+      <div className={styles['header-block']}>
         <h1>
           The world's greatest fake site
         </h1>

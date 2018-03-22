@@ -16,17 +16,26 @@ module.exports = {
             {test: /\.(js|jsx)/,exclude: /node_modules/, use: ['babel-loader'] },
             {test: /\.css$/, 
                 use: [
-                    'style-loader',
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            localIdentName: '[hash:base64:5]__[local]'
+                        }
+                    },
                     'postcss-loader'
 
                 ] 
             },
-            {test: /\.(png|jpg|gif)$/, use: ['url-loader'] },
-            { test: /\.otf$/, 
-                loader: 'file-loader', 
+            {test: /\.(png|jpg|gif|otf)$/, use: ['url-loader'] },
+            {test: /\.otf$/, 
+                loader: 'url-loader',
                 options: {
-                    name: 'fonts/[name].[ext]',
-                    limit: 50
+                    limit: 500000,
+                    name: './fonts/[name].[ext]'
                 }
             },
 

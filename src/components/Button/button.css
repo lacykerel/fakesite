@@ -2,7 +2,8 @@
   background-color: #EE2D1C;
   border-radius: 20px;
   color: #fff;
-  display: block;
+  font-size: 22px;
+  display: inline-block;
   max-height: 55px;
   text-align: center;
   text-decoration: none;

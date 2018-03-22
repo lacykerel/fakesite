@@ -3,9 +3,73 @@ h2 {
   font-size: 36px;
   color: #4c4c51;
   line-height: 36px;
+  margin-bottom: 22px;
 }
 
-p {
+.video-copy {
   font-size: 22px;
-  color: #4c4c51;
+  color: #88939E;
+  line-height: 28px;
+}
+
+.show { display: block; }
+.hide { display: none; }
+
+section.video {
+  lost-center: 1200px;
+  lost-utility: clearfix;
+ 
+}
+
+.video-section {
+  lost-utility: clearfix;
+}
+
+.video-info-wrap {
+  lost-column: 1/1;
+}
+
+.video-info {
+  float: left;
+  lost-column: 1/2;
+  padding-top: 50px;
+}
+
+.video-placeholder {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/img/stockimage.png');
+  height: 260px;
+  float: right;
+  width: 460px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,#EE2E1D,#FFB1B5);
+    opacity: .6;
+  }
+}
+
+.video-icon {
+  position: relative;
+  display: inline-block;
+  width: 116px;
+  height: 117px;
+  left: 38%;
+  top: 30%;
+}
+
+.video-icon:after {
+  content: '';
+  position: absolute;
+  background-image: url('/img/playbtn.png');
+  width: 116px;
+  height: 117px;
 }

@@ -1,0 +1,11 @@
+section.blurb {
+  lost-center: 810px;
+  lost-utility: clearfix;
+  text-align: center;
+}
+
+p {
+  color: #88939E;
+  font-size: 22px;
+  line-height: 28px;
+}
