@@ -1,11 +1,50 @@
 footer {
   lost-center: 1200px;
   lost-utility: clearfix;
+
+  ul li a {
+    text-decoration: none;
+    color: #88939E;
+    font-size: 20px;
+    &:hover {
+      color: #4C4C51;
+    }
+  }
 }
+
+.footer-link-wrap {
+  margin-bottom: 40px;
+}
+
+
+
 
 .footer-link-title {
   color: #f04333;
   font-family: 'SourceSansBold';
   font-size: 22px;
   font-weight: bold;
+}
+
+.footer-links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 1px solid #E8E8E8;
+  margin-bottom: 40px;
+}
+
+.privacy-links {
+  lost-columns: 1/2;
+  float: right;
+}
+
+.privacy-links li {
+  float: left;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
 }

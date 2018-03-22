@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../footer.css';
 
 const FooterLinks = () => (
-  <div>
+  <div className={styles['footer-link-wrap']}>
     <ul className={styles['footer-links']}>
       <p className={styles['footer-link-title']}>Fakesite</p>
       <li><a href="/">About us</a></li>
