@@ -1,5 +1,10 @@
+@custom-media --large-desktop (min-width: 1200px);
+
 section.blurb {
-  lost-center: 810px;
+  lost-center: 850px;
   lost-utility: clearfix;
   text-align: center;
+  @media(--large-desktop) {
+    margin-bottom: 80px;
+  }
 }

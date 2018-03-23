@@ -2,6 +2,12 @@
 @custom-media --desktop (min-width: 992px);
 @custom-media --large-desktop (min-width: 1200px);
 
+:global {
+  .bm-burger-button {
+    display: none !important;
+  }
+}
+
 header {
   background-image: url('/img/hero-image.png');
   background-repeat: no-repeat;
@@ -14,13 +20,14 @@ header {
 nav {
   padding-top: 20px;
   margin-bottom: 40px;
-  @util clearfix;
+  lost-utility: clearfix;
 
   @media(--desktop) {
     lost-center: 992px;
     margin-bottom: 60px;
     padding-top: 40px;
   }
+  
   @media(--large-desktop) {
     lost-center: 1200px;
   }
@@ -155,12 +162,6 @@ nav {
 .bm-menu {
   padding: 0;
   font-size: 1.15em;
-}
-
-:global {
-  .bm-burger-button {
-    display: none !important;
-  }
 }
 
 .menu-nav-wrap .close-button {

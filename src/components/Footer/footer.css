@@ -1,12 +1,12 @@
+@custom-media --tablet (min-width: 768px);
+@custom-media --large-desktop (min-width: 1200px);
+
 @font-face {
   font-family: 'SourceSansBold';
   font-weight: bold;
 	font-style: normal;
 	src: url('/fonts/sourcesansprobold.otf') format("opentype");
 }
-
-@custom-media --tablet (min-width: 768px);
-@custom-media --large-desktop (min-width: 1200px);
 
 .footer {
   display: block;
@@ -15,7 +15,6 @@
   @media(--large-desktop) {
     lost-center: 1200px;
   }
-  
 
   ul li a {
     text-decoration: none;
@@ -35,7 +34,6 @@
   @media(--large-desktop) {
     padding: 0 20px;
   }
-  
 }
 
 .footer-links {
@@ -43,7 +41,6 @@
   @media(--tablet) {
     lost-column: 1/4;
   }
-  
 }
 
 p.footer-link-title {

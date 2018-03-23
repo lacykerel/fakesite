@@ -48,7 +48,7 @@ export default class Video extends Component {
 
     return (
       <section className={styles.video}>
-        <div className={this.state.videosLoading ? styles.show : styles.hide}>Yeah we're loading....</div>
+        <div className={this.state.videosLoading ? styles.show : styles.hide}><div className={styles.loader}></div> Yeah we're loading....</div>
         <div className={styles['video-info-wrap']}>
           <Slider {...settings}>
             {
