@@ -1,11 +1,15 @@
+@custom-media --tablet (min-width: 768px);
+
 .btn {
   background-color: #EE2D1C;
   border-radius: 20px;
   color: #fff;
-  font-size: 22px;
   display: inline-block;
   max-height: 55px;
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
+  @media(--tablet) {
+    font-size: 22px;
+  }
 }

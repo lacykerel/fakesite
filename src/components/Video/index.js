@@ -22,10 +22,28 @@ export default class Video extends Component {
 
   render() {
     const settings = {
-      dots: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 544,
+          seetings: {
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            dots: true,
+          }
+        },{
+          breakpoint: 992,
+          settings: {
+            dots: true
+          }
+        }
+      ]
     };
 
     return (
@@ -50,6 +68,7 @@ export default class Video extends Component {
               )
             }
           </Slider>
+          <p className={this.state.videosLoading ? styles.hide : styles['show-for-phone']}>Scroll to view more videos</p>
         </div>
       </section>
     )

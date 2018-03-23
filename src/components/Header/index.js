@@ -34,15 +34,22 @@ class Header extends Component {
             <span className={styles['header-menu-icon']}></span>
           </a>
           <div className={styles.slide}>
-          <Menu width={ 280 } noOverlay isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} right className={styles['menu-nav-wrap']}>
-            <a href="#" onClick={() => this.closeMenu()} className={styles['close-button']} title="close"><span>Close</span></a>
+            <Menu width={240} noOverlay isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} right className={styles['menu-nav-wrap']}>
+              <a href="#" onClick={() => this.closeMenu()} className={styles['close-button']} title="close"><span>Close</span></a>
               <ul className={styles['nav-list']}>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Account</a></li>
                 <li><a href="#">Help</a></li>
               </ul>
-          </Menu>
+            </Menu>
+          </div>
+          <div className={styles.navbar}>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#"><img src='/img/profile.png'/></a></li>
+            </ul>
           </div>
       </nav>
       

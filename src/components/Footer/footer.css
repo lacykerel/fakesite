@@ -1,6 +1,21 @@
-footer {
-  lost-center: 1200px;
+@font-face {
+  font-family: 'SourceSansBold';
+  font-weight: bold;
+	font-style: normal;
+	src: url('/fonts/sourcesansprobold.otf') format("opentype");
+}
+
+@custom-media --tablet (min-width: 768px);
+@custom-media --large-desktop (min-width: 1200px);
+
+.footer {
+  display: block;
   lost-utility: clearfix;
+  position: relative;
+  @media(--large-desktop) {
+    lost-center: 1200px;
+  }
+  
 
   ul li a {
     text-decoration: none;
@@ -13,17 +28,30 @@ footer {
 }
 
 .footer-link-wrap {
+  display: inline-block;
+  position: relative;
   margin-bottom: 40px;
+  width: 100%;
+  @media(--large-desktop) {
+    padding: 0 20px;
+  }
+  
 }
 
+.footer-links {
+  lost-column: 1/2;
+  @media(--tablet) {
+    lost-column: 1/4;
+  }
+  
+}
 
-
-
-.footer-link-title {
+p.footer-link-title {
+  font-family: "SourceSansBold";
   color: #f04333;
-  font-family: 'SourceSansBold';
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
+  margin-bottom: 12px;
 }
 
 .footer-links li {
@@ -36,15 +64,30 @@ hr {
   margin-bottom: 40px;
 }
 
+.privacy-link-wrap {
+  lost-column: 1/2;
+}
+
 .privacy-links {
-  lost-columns: 1/2;
   float: right;
 }
 
 .privacy-links li {
-  float: left;
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
+  display: block;
+  margin-bottom: 10px;
+  text-align: right;
+
+  @media(--tablet) {
+    float: left;
+    margin-right: 30px;
+    text-align: right;
+    &:last-child {
+      margin-right: 0;
+    }
   }
+}
+
+.logo-privacy {
+  display: inline-block;
+  width: 100%;
 }
