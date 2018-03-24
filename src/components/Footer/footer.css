@@ -1,4 +1,5 @@
 @custom-media --tablet (min-width: 768px);
+@custom-media --desktop (min-width: 992px);
 @custom-media --large-desktop (min-width: 1200px);
 
 @font-face {
@@ -17,11 +18,14 @@
   }
 
   ul li a {
+    color: #88939e;
+    font-size: 18px;
     text-decoration: none;
-    color: #88939E;
-    font-size: 20px;
     &:hover {
-      color: #4C4C51;
+      color: #4c4c51;
+    }
+    @media(--desktop) {
+      font-size: 20px;
     }
   }
 }
@@ -44,9 +48,8 @@
 }
 
 p.footer-link-title {
-  font-family: "SourceSansBold";
   color: #f04333;
-  font-size: 20px;
+  font-family: "SourceSansBold";
   font-weight: bold;
   margin-bottom: 12px;
 }
@@ -57,7 +60,7 @@ p.footer-link-title {
 }
 
 hr {
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
   margin-bottom: 40px;
 }
 

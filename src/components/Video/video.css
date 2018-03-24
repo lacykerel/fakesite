@@ -13,8 +13,8 @@ h2 {
 }
 
 .video-copy {
+  color: #88939e;
   font-size: 16px;
-  color: #88939E;
   line-height: 28px;
 
   @media(--desktop) {
@@ -103,14 +103,14 @@ section.video {
   width: 100%;
 
   &:before {
+    background-image: linear-gradient(to bottom,#ee2e1d,#ffb1b5);
     content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom,#EE2E1D,#FFB1B5);
+    position: absolute;
     opacity: .6;
+    right: 0;
+    top: 0;
   }
 
   @media(--tablet) {
@@ -133,18 +133,47 @@ section.video {
   width: 116px;
 }
 
-.loader {
-  background-image: url('/img/loader.gif');
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 300px;
-  position: relative;
-}
-
 .show-for-phone {
   display: block;
 
   @media(--tablet) {
     display: none;
+  }
+}
+
+.loader-wrap {
+  lost-center: 300px;
+  text-align: center;
+}
+
+.loader {
+  animation: loader 2s infinite ease;
+  border: 4px solid #ee2d1c;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  top: 50%;
+  width: 30px;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
   }
 }

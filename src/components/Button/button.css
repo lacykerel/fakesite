@@ -1,14 +1,14 @@
 @custom-media --tablet (min-width: 768px);
 
 .btn {
-  background-color: #EE2D1C;
+  background-color: #ee2d1c;
   border-radius: 20px;
   color: #fff;
   display: inline-block;
   max-height: 55px;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  padding: 10px 30px;
   @media(--tablet) {
     font-size: 22px;
   }

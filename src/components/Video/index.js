@@ -27,7 +27,7 @@ export default class Video extends Component {
       responsive: [
         {
           breakpoint: 544,
-          seetings: {
+          settings: {
             dots: false,
           }
         },
@@ -48,7 +48,9 @@ export default class Video extends Component {
 
     return (
       <section className={styles.video}>
-        <div className={this.state.videosLoading ? styles.show : styles.hide}><div className={styles.loader}></div> Yeah we're loading....</div>
+      <div className={styles['loader-wrap']}>
+       <div className={this.state.videosLoading ? styles.show : styles.hide}><span className={styles.loader}></span> Loading videos...</div>
+       </div>
         <div className={styles['video-info-wrap']}>
           <Slider {...settings}>
             {
