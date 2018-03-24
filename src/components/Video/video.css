@@ -75,12 +75,6 @@ section.video {
   overflow: hidden;
 
   @media(--tablet) {
-    h2 {
-      font-size: 22px;
-    }
-    span {
-      font-size: 16px;
-    }
     lost-column: 1/2;
   }
 

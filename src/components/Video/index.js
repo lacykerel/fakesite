@@ -26,7 +26,7 @@ export default class Video extends Component {
       dots: true,
       responsive: [
         {
-          breakpoint: 544,
+          breakpoint: 767,
           settings: {
             dots: false,
           }
